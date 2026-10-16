@@ -171,3 +171,33 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+<style id="aioli-brunch-layout-fix">
+/* Restaura a apresentação dos cartões do Brunch */
+#brunch .brunch-grid,
+.brunch-section .brunch-grid,
+.brunch-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+}
+
+.brunch-grid > * {
+  background: #fffaf4 !important;
+  border: 1px solid #ded2c4 !important;
+  border-radius: 16px !important;
+  padding: 28px !important;
+  min-width: 0;
+}
+
+.brunch-grid svg {
+  display: block;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+  .brunch-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
