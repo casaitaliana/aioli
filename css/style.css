@@ -87,3 +87,13 @@ html { scroll-behavior: smooth; }
     object-position: left center;
   }
 }
+
+/* Brunch — Aïoli */
+.brunch-section{background:#f3eadb}
+.brunch-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.brunch-card{background:#fffaf2;border:1px solid rgba(94,58,37,.23);border-radius:16px;padding:30px;display:flex;flex-direction:column;min-height:285px}
+.brunch-icon{font-size:32px}.brunch-card h3,.brunch-details h3{font:600 32px/1.1 'Cormorant Garamond',serif;color:#5e3a25;margin:18px 0 12px}
+.brunch-card p{line-height:1.65;color:#5c5349;margin:0 0 24px}.brunch-card strong{font-size:23px;color:#a84735;margin-top:auto}
+.brunch-details{display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:1px solid rgba(94,58,37,.25);margin-top:38px;padding-top:28px}
+.brunch-details h3{margin:0 0 12px}.brunch-details p{line-height:1.7;margin:0}.brunch-kids{min-width:225px;background:#ead9bc;padding:20px;border-radius:12px}.brunch-kids strong{display:block;color:#7b2f27;font-size:22px}
+@media(max-width:900px){.brunch-grid{grid-template-columns:1fr}.brunch-card{min-height:0}.brunch-details{flex-direction:column;align-items:stretch}.brunch-kids{min-width:0}}
